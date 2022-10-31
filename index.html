@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <center>
+    <h1>Czy jesteś gejem?</h1>
+
+    <button onclick="document.getElementById('gej').innerHTML = 'Jesteś gejem na ' + getRndInteger(0, 100) + '%<br>' + pokaz()">Kliknij</button>
+    <br>
+    <lol id="gej"></lol>
+    <lol id="pog"></lol>
+
+    </center>
+
+</body>
+<script>
+    var x;
+    function getRndInteger(min, max) {
+        x = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(x)
+        return x;
+
+    }
+    
+    function pokaz(){
+        if(x > 80){
+            return "<img src='gachi.avif'>";
+        } else if (x == 0){
+            return "<img src='gigachad.avif'>";
+        }
+        
+        else{
+            return "";
+        }
+    }
+    
+    </script>
+
+</html>
